@@ -557,7 +557,8 @@ body {
   
   .product__container .product__Price0nlyModal {
     bottom: 20px;
-    left: -70px;
+    max-width: 100px;
+    left: -9px;
     font-size: 20px;
     color: #e73d0c !important;
   

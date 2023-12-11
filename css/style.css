@@ -260,7 +260,7 @@ hr {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   transition-duration: .25s;
   overflow: hidden;
-  border-right:1px solid #ccc ;
+  border-right: 1px solid #ccc;
 }
 
 .accordion__item {
@@ -568,7 +568,8 @@ hr {
 
 .product__container .product__Price0nlyModal {
   bottom: 20px;
-  left: -70px;
+  max-width: 100px;
+  left: -9px;
   font-size: 20px;
   color: #e73d0c !important;
 
@@ -1111,9 +1112,10 @@ tr:nth-child(even) {
 }
 
 @media screen and (max-width: 720px) {
-  .swiper-slide-text{
+  .swiper-slide-text {
     display: none;
   }
+
   .productsCard {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1271,14 +1273,16 @@ tr:nth-child(even) {
     font-size: 18px;
   }
 }
-@media screen and (max-width: 620px){
-.header-search input {
+
+@media screen and (max-width: 620px) {
+  .header-search input {
     margin-left: 60px;
-    width:80%;
-}
-.header_logo-right{
-  display: none;
-}
+    width: 80%;
+  }
+
+  .header_logo-right {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -1341,7 +1345,16 @@ tr:nth-child(even) {
 
 }
 
-@media screen and (device-width: 1024px) {}
+@media screen and (max-width: 360px) {
+  .header__logo {
+    font-size: 65px;
+  }
+
+}
+
+
+
+
 
 
 .container-register input[type=text],
