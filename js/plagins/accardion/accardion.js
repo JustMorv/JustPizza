@@ -26,21 +26,14 @@ function slide(link) {
         b += paddingBottomPart;
         subMenu.style.paddingBottom = `${b}px`
       }
-
       if (i < height) {
-
         setTimeout(function () {
-
           innerFunc(i, t, b);
-
         }, time / 100);
-
       } else {
-
         subMenu.removeAttribute('style');
         callback();
       }
-
     })(0, 0, 0);
   },
 

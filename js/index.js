@@ -1,6 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const link = document.createElement('link');
+
   link.rel = 'stylesheet';
   link.type = 'text/css';
   link.href = 'css/style.css';
@@ -13,21 +14,23 @@ document.addEventListener("DOMContentLoaded", () => {
   script.async = true;
   document.head.appendChild(script);
 
-  console.log(link.href)
-  console.log(script.src)
+  var str = link.href;
+  if (str.lastIndexOf("css/")) {
+    var lastIndex = str.lastIndexOf("css/")
+    str = str.substring(0, lastIndex);
+  }
 
   const changeItem = document.querySelector('.accordion__link-changeItems').addEventListener("click", () => {
-    var str = location.href;
-    var lastIndex = str.lastIndexOf("index");
-    str = str.substring(0, lastIndex);
 
     if (link.href == str + 'css/style.css') {
-      link.href = link.href = 'css/style2.css';
+      link.href = str + 'css/style2.css';
       script.src = 'ваыв';
     } else {
       link.href = 'css/style.css';
       script.src = 'js/plagins/smooth/smoth.js';
     }
+
+
   })
 
   console.log(productCard)

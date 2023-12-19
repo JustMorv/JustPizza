@@ -229,7 +229,7 @@ body {
     top: 0;
     left: -100%;
     width: 400px;
-    height: 100%;
+    height: 90%;
     margin: 0;
     padding: 80px 30px;
     list-style: none;
@@ -518,18 +518,18 @@ body {
   }
   .productsCard {
     display: grid;
-    grid-template-columns: 260px 260px 260px 260px;
-    /* grid-gap: 10px; */
-    justify-content: center;
+  
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
   }
   
   .productsCard .product__container {
     margin-bottom: 50px;
     position: relative;
-    width: 250px;
-    height: 350px;
+    width: 300px;
+    height: 400px;
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 5px;
     transform-style: preserve-3d;
   }
   
@@ -551,14 +551,11 @@ body {
     bottom: 70px;
     font-style: italic;
     max-width: 280px;
-    max-height: 35px;
-    overflow: hidden;
   }
   
   .product__container .product__Price0nlyModal {
     bottom: 20px;
-    max-width: 100px;
-    left: -9px;
+    left: -100px;
     font-size: 20px;
     color: #e73d0c !important;
   
@@ -598,9 +595,9 @@ body {
   
   .product__container .product__img {
     position: absolute;
-    top: 32%;
+    top: 35%;
     left: 50%;
-    max-width: 216px;
+    max-width: 250px;
     max-height: 250px;
     border-radius: 50%;
     transition: 0.5s;
@@ -1069,7 +1066,6 @@ body {
   
   }
   
-
   
   @media screen and (max-width: 620px) {
     .modal{
@@ -1177,174 +1173,6 @@ body {
       text-align: center;
     }
     .footer__butoom ul > li a {
-      font-size: 18px;
-    }
-  }
-  @media screen and (max-width: 720px) {
-    .header{
-      height:150px;
-    }
-    .header__container{
-      margin: 0 auto;
-      height: 100%;
-    }
-    .header__logo {
-      font-size: 60px;
-      margin-top: 20px;
-    }
-    .productsCard{
-      margin-top: 160px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 20px;
-    }
-    .productsCard .product__container {
-      width: 200px;
-      height: 300px
-    }
-    .product__container .product__img {
-      max-width: 154px;
-      top: 29%;
-  
-    }
-    .header-search input {
-      width: 91%;
-      margin-left: 44px;
-    }
-  
-  }
-  
-  
-  @media screen and (max-width: 620px) {
-    .modal {
-      z-index: 1000;
-    }
-  
-    .header-search input {
-      margin-left: 60px;
-      width: 90%;
-    }
-  
-    .modalInfoBody {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-  
-    .modal__right-content {
-      margin-left: 0;
-      margin-top: 20px;
-    }
-  
-    .section_swiper {
-      display: none;
-    }
-  
-    .productsCard {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-  
-    .footer__rows {
-      display: grid;
-      grid-gap: 40px;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas:
-        "Topheader"
-        "Topmain"
-        "Topfooter";
-    }
-  
-    .footer__rows {
-      display: block;
-    }
-  
-    .footer__link {
-      margin-bottom: 40px;
-    }
-  
-    .footer__menu {
-      grid-area: Topheader;
-      margin-left: 120px;
-    }
-  
-    .siteContacts {
-      /* grid-area: Topmain; */
-      margin-left: 200px;
-      margin-bottom: 20px;
-    }
-  
-    .footer__top {
-      grid-area: Topfooter;
-      width: 400px;
-      margin-left: 200px;
-    }
-  
-    .footer__menu {
-      margin: 0 auto;
-      width: 100%;
-    }
-  
-    .footer__menu>ul li a {
-      font-size: 25px;
-      padding: 0 20px;
-      margin: 10px;
-    }
-  
-    .siteContacts .fa,
-    .siteContacts .a {
-      font-size: 25px;
-    }
-  
-    .footer__top-link span {
-      display: none;
-    }
-  
-    .footer__top-link img {
-      width: 70px;
-      height: 70px;
-      margin: 20px;
-    }
-  
-    .footer__rows-battom {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-areas:
-        "bottomHeader"
-        "bottomMain"
-        "bottomFooter";
-    }
-  
-    .footer__butoom-left {
-      grid-area: bottomHeader;
-    }
-  
-    .footer__butoom-right {
-      grid-area: bottomMain;
-    }
-  
-    .footer__butoom-center {
-      grid-area: bottomFooter;
-    }
-  
-    .footer__butoom-item {
-      width: 70%;
-      margin: 0 auto;
-    }
-  
-    .footer__butoom-item h3 {
-      font-size: 25px;
-      text-align: center;
-    }
-  
-    .footer__butoom-item span {
-      margin-left: 20%;
-    }
-  
-    .footer_list>li {
-      text-align: center;
-    }
-  
-    .footer__butoom ul>li a {
       font-size: 18px;
     }
   }

@@ -2,8 +2,6 @@ const header =  document.querySelector(".header"),
       headerFixed = document.querySelector(".headerFixed"),
       headerLogo = document.querySelector(".header__logo_conteiner");
 
-
-
 window.addEventListener("scroll",headerScroll)
 
 function headerScroll (){

@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="img/icon.png" href="img/icon.png" size="30">
     <link rel="stylesheet" href="js/plagins/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="fontawesome/css/all.css">
-    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/gridTemplete.css">
 
@@ -20,17 +18,18 @@
         <header class="header" id="header">
             <div class="header__container">
                 <div class="header__logo_conteiner">
-                    <h1 class="header__logo"><a href="index.html"> JustPizza</a> </h1>
+                    <h1 class="header__logo"><a  href="index.html"> JustPizza</a> </h1>
                     <!-- <h1 class="gradient-text">JustPizza</h1> -->
                     <section class="header_logo-right">
                         <div class="header-accout">
-                            <a href="signin.html" class="header-accout-user">
-                                <i class="fa fa-user" aria-hidden="true"></i>
+                            <a href="" class="header-accout-user">
+                                <p>Ввойти</p>
                             </a>
                         </div>
                         <div class="header-basket">
-                            <a href="cart.html" class="header-basket-item">
+                            <a href="" class="header-basket-item">
                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                <p>Корзина</p>
                             </a>
                         </div>
                     </section>
@@ -48,21 +47,20 @@
                         <ul class="accordion">
                             <li class="accordion__item">
                                 <a class="menu__item accordion__link" href="index.html">Главная</a>
-
+                        
                             </li>
 
                             <li class="accordion__item">
                                 <a class="menu__item accordion__link " href="cart.html">карзина</a>
-
+                       
                             </li>
                             <li class="accordion__item">
                                 <a class="menu__item accordion__link" href="signin.html">аккаунт</a>
-
+                        
                             </li>
 
                             <li class="accordion__item">
-                                <a class="menu__item accordion__link  accordion__link-changeItems " href="#">Изменить
-                                    стили </a>
+                                <a class="menu__item accordion__link  accordion__link-changeItems " href="#">Изменить стили </a>
                             </li>
 
                         </ul>
@@ -77,34 +75,6 @@
             </div>
 
         </header>
-        <style>
-   
-
-          .main__container  section {
-                margin: 20px auto;
-                padding: 20px;
-                background-color: #000;
-                border-radius: 5px;
-                box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-            }
-
-           .main__container .cart-item {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-bottom: 20px;
-            }
-
-            .main__container .cart-item img {
-                object-fit: cover;
-                margin-right: 20px;
-                border-radius: 5px;
-            }
-
-            .main__container .cart-total {
-                text-align: right;
-            }
-        </style>
         <main class="main">
             <div class="main__container">
                 <div class="cart">
@@ -112,7 +82,7 @@
                         <div class="cart-item">
                             <img src="img/product/2.webp" alt="Product 1">
                             <div>
-                                <h2>Пепперони</h2>
+                                <h2>Название товара 1</h2>
                                 <p>Цена: $20.00</p>
                                 <p>Количество: 1</p>
                             </div>
@@ -120,9 +90,9 @@
                         </div>
                 
                         <div class="cart-item">
-                            <img src="img/product/2.webp" alt="Product 1">
+                            <img src="img/product/2.webp" alt="Product 2">
                             <div>
-                                <h2>Маргарита</h2>
+                                <h2>Название товара 2</h2>
                                 <p>Цена: $25.00</p>
                                 <p>Количество: 2</p>
                             </div>
@@ -133,8 +103,11 @@
                     <section class="cart-total">
                         <h2>Общая сумма: $70.00</h2>
                         <button>Оформить заказ</button>
-                    </section>
-                </div>
+                    </section>     
+
+                <!-- main__content -->
+
+
             </div>
 
         </main>
@@ -146,16 +119,16 @@
                     <nav class="footer__menu">
                         <ul class="footer__link">
                             <li class="footer__item">
-                                <a href="index.html">shop</a>
+                                <a href="">shop</a>
                             </li>
                             <li class="footer__item">
-                                <a href="about.html">About</a>
+                                <a href="">About</a>
                             </li>
                             <li class="footer__item">
-                                <a href="pays.html">Contacts</a>
+                                <a href="">Contacts</a>
                             </li>
                             <li class="footer__item">
-                                <a href="register.html">Delivery </a>
+                                <a href="">Delivery </a>
                             </li>
                         </ul>
                     </nav>
@@ -169,12 +142,19 @@
                                 <i class="fa fa-facebook-official" aria-hidden="true"></i>
                             </a>
                             <a href="" class="footer__socials-link">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="" class="footer__socials-link">
                                 <i class="fa fa-instagram" aria-hidden="true"></i>
                             </a>
                         </span>
                     </div>
                     <div class="footer__top">
-                    
+                        <div class="footer__top-link">
+                            <a href="#header">
+                                <span>Top</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <hr class="hr">
@@ -183,9 +163,10 @@
                         <div class="footer__butoom-item footer__butoom-left">
                             <h3>Интернет магазин</h3>
                             <ul class="footer_list">
-                                <li class="footer_list-item"><a href="about.html"> О нас</a></li>
-                                <li class="footer_list-item"><a href="cart.html"> Корзина</a></li>
-                                <li class="footer_list-item"><a href="pays.html"> Доставка и оплата</a></li>
+                                <li class="footer_list-item"><a href="about_us.html"> О нас</a></li>
+                                <li class="footer_list-item"><a href="article.html"> Статьи</a></li>
+                                <li class="footer_list-item"><a href="pay.html"> Доставка и оплата</a></li>
+                                <li class="footer_list-item"><a href=""> Помощь </a></li>
                             </ul>
                             <hr>
                         </div>
@@ -200,11 +181,12 @@
                             </div>
                         </div>
                         <div class="footer__butoom-item footer__butoom-right">
-                            <h3>Навигация сайта</h3>
+                            <h3>Католог</h3>
                             <ul class="footer_list">
-                                <li><a href="index.html" class="navigation_item" data-field="category">Главная</a></li>
-                                <li><a href="register.html" class="navigation_item" data-field="category">Регистрация</a></li>
-                                <li><a href="cart.html" class="navigation_item" data-field="category">Корзина</a></li>
+                                <li><a href="" class="navigation_item" data-field="category">Wi-Fi Modem</a></li>
+                                <li><a href="" class="navigation_item" data-field="category">Wi-Fi Router</a></li>
+                                <li><a href="" class="navigation_item" data-field="category">Источники питания</a></li>
+                                <li><a href="" class="navigation_item" data-field="category">Сервера</a></li>
                             </ul>
                             <hr>
                         </div>
@@ -321,7 +303,7 @@
         <script src="db/db.js" defer></script>
 
         <script src="js/index.js" defer></script>
-
+        
 
 </body>
 
