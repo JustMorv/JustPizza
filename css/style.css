@@ -1165,7 +1165,14 @@ tr:nth-child(even) {
 }
 
 }
-@media screen and (device-width: 1024px) {
+@media screen and (max-width: 360px) {
+  .header__logo {
+    font-size: 65px;
+  }
+
+  .header__logo_conteiner {
+    margin-top: 20vh;
+  }
 }
 
 
