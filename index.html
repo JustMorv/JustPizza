@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="img/icon.png" href="img/icon.png" size="30">
     <link rel="stylesheet" href="js/plagins/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/gridTemplete.css">
 
@@ -18,18 +20,17 @@
         <header class="header" id="header">
             <div class="header__container">
                 <div class="header__logo_conteiner">
-                    <h1 class="header__logo"><a  href="index.html"> JustPizza</a> </h1>
+                    <h1 class="header__logo"><a href="index.html"> JustPizza</a> </h1>
                     <!-- <h1 class="gradient-text">JustPizza</h1> -->
                     <section class="header_logo-right">
                         <div class="header-accout">
-                            <a href="" class="header-accout-user">
-                                <p>Ввойти</p>
+                            <a href="signin.html" class="header-accout-user">
+                                <i class="fa fa-user" aria-hidden="true"></i>
                             </a>
                         </div>
                         <div class="header-basket">
-                            <a href="" class="header-basket-item">
+                            <a href="cart.html" class="header-basket-item">
                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                <p>Корзина</p>
                             </a>
                         </div>
                     </section>
@@ -47,20 +48,23 @@
                         <ul class="accordion">
                             <li class="accordion__item">
                                 <a class="menu__item accordion__link" href="index.html">Главная</a>
-                        
+
                             </li>
 
                             <li class="accordion__item">
                                 <a class="menu__item accordion__link " href="cart.html">карзина</a>
-                       
+
+                            </li>
+                            <li class="accordion__item">
+                                <a class="menu__item accordion__link" href="about.html">о нас</a>
                             </li>
                             <li class="accordion__item">
                                 <a class="menu__item accordion__link" href="signin.html">аккаунт</a>
-                        
                             </li>
 
+
                             <li class="accordion__item">
-                                <a class="menu__item accordion__link  accordion__link-changeItems " href="#">Изменить стили </a>
+                                <a class="menu__item accordion__link  accordion__link-changeItems">Изменить стили </a>
                             </li>
 
                         </ul>
@@ -95,7 +99,6 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
-
                 <section class="section_swiper">
                     <div class="title__content">
                         <h1 id="productsCard__news">Часто Заказывают</h1>
@@ -152,16 +155,16 @@
                     <nav class="footer__menu">
                         <ul class="footer__link">
                             <li class="footer__item">
-                                <a href="">shop</a>
+                                <a href="index.html">shop</a>
                             </li>
                             <li class="footer__item">
-                                <a href="">About</a>
+                                <a href="about.html">About</a>
                             </li>
                             <li class="footer__item">
-                                <a href="">Contacts</a>
+                                <a href="pays.html">Contacts</a>
                             </li>
                             <li class="footer__item">
-                                <a href="">Delivery </a>
+                                <a href="register.html">Delivery </a>
                             </li>
                         </ul>
                     </nav>
@@ -175,19 +178,12 @@
                                 <i class="fa fa-facebook-official" aria-hidden="true"></i>
                             </a>
                             <a href="" class="footer__socials-link">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </a>
-                            <a href="" class="footer__socials-link">
                                 <i class="fa fa-instagram" aria-hidden="true"></i>
                             </a>
                         </span>
                     </div>
                     <div class="footer__top">
-                        <div class="footer__top-link">
-                            <a href="#header">
-                                <span>Top</span>
-                            </a>
-                        </div>
+
                     </div>
                 </div>
                 <hr class="hr">
@@ -196,10 +192,9 @@
                         <div class="footer__butoom-item footer__butoom-left">
                             <h3>Интернет магазин</h3>
                             <ul class="footer_list">
-                                <li class="footer_list-item"><a href="about_us.html"> О нас</a></li>
-                                <li class="footer_list-item"><a href="article.html"> Статьи</a></li>
-                                <li class="footer_list-item"><a href="pay.html"> Доставка и оплата</a></li>
-                                <li class="footer_list-item"><a href=""> Помощь </a></li>
+                                <li class="footer_list-item"><a href="about.html"> О нас</a></li>
+                                <li class="footer_list-item"><a href="cart.html"> Корзина</a></li>
+                                <li class="footer_list-item"><a href="pays.html"> Доставка и оплата</a></li>
                             </ul>
                             <hr>
                         </div>
@@ -214,12 +209,12 @@
                             </div>
                         </div>
                         <div class="footer__butoom-item footer__butoom-right">
-                            <h3>Католог</h3>
+                            <h3>Навигация сайта</h3>
                             <ul class="footer_list">
-                                <li><a href="" class="navigation_item" data-field="category">Wi-Fi Modem</a></li>
-                                <li><a href="" class="navigation_item" data-field="category">Wi-Fi Router</a></li>
-                                <li><a href="" class="navigation_item" data-field="category">Источники питания</a></li>
-                                <li><a href="" class="navigation_item" data-field="category">Сервера</a></li>
+                                <li><a href="index.html" class="navigation_item" data-field="category">Главная</a></li>
+                                <li><a href="register.html" class="navigation_item"
+                                        data-field="category">Регистрация</a></li>
+                                <li><a href="cart.html" class="navigation_item" data-field="category">Корзина</a></li>
                             </ul>
                             <hr>
                         </div>
@@ -274,7 +269,7 @@
                 <div class="modal__dialog-header">
                     <div class="modal__dialog-header-content">
                         <div class="card__modal-title">
-                            <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, distinctio.</h2>
+                            <h2>Wi-Fi роутер MikroTik hAP mini</h2>
                         </div>
                     </div>
                     <div class="modal__dialog-header-close">
@@ -289,7 +284,7 @@
                             </div>
                             <div class="modal_price">
                                 <span class="modal__text-price">Cтоимость</span>
-                                <span class="modal__footer-price2">2 000 ₸</span>
+                                <span class="modal__footer-price2">7 910 ₸</span>
                             </div>
                         </div>
                         <div class="modal__right-content">
@@ -336,7 +331,7 @@
         <script src="db/db.js" defer></script>
 
         <script src="js/index.js" defer></script>
-        
+
 
 </body>
 

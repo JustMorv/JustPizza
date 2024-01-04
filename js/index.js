@@ -1,39 +1,18 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const link = document.createElement('link');
-
-  link.rel = 'stylesheet';
-  link.type = 'text/css';
-  link.href = 'css/style.css';
-  document.head.appendChild(link);
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'css/style.css';
+    document.head.appendChild(link);
 
   const script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src = 'js/plagins/smooth/smoth.js';
-  script.defer = true;
-  script.async = true;
-  document.head.appendChild(script);
+    script.type = 'text/javascript';
+    script.src = 'js/plagins/smooth/smoth.js';
+    script.defer = true;
+    script.async = true;
+    document.head.appendChild(script);
 
-  var str = link.href;
-  if (str.lastIndexOf("css/")) {
-    var lastIndex = str.lastIndexOf("css/")
-    str = str.substring(0, lastIndex);
-  }
-
-  const changeItem = document.querySelector('.accordion__link-changeItems').addEventListener("click", () => {
-
-    if (link.href == str + 'css/style.css') {
-      link.href = str + 'css/style2.css';
-      script.src = 'ваыв';
-    } else {
-      link.href = 'css/style.css';
-      script.src = 'js/plagins/smooth/smoth.js';
-    }
-
-
-  })
-
-  console.log(productCard)
 
   const addRenderCard = (prod) => `
     <div class="product__container">
@@ -66,7 +45,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   cardRender(productCard, '.productsCard')
   cardModalRender(cartModal, '.modal__right-sections')
+  const changeItem = document.querySelector('.accordion__link-changeItems').addEventListener("click", () => {
+    var str = location.href;
+    if (location.href.indexOf("index") === -1 || str.lastIndexOf("index")) {
+      var lastIndex = str.lastIndexOf("index");
+      str = str.substring(0, lastIndex);
 
+      if (link.href == str + 'css/style.css') {
+        link.href = link.href = 'css/style2.css';
+        script.src = 'ваыв';
+      } else {
+        link.href = 'css/style.css';
+        script.src = 'js/plagins/smooth/smoth.js';
+      }
+    }
+  })
 
 
 
